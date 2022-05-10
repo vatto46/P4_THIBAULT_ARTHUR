@@ -1,10 +1,33 @@
 body {
     margin: 0;
     padding: 0;
-    background: #FFF;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+.texte{
+    font-size: 20px;
+    max-width: 570px;
+    text-align: center;
+}
+.margin{
+    display: flex;
+    justify-content: center;
+}
+.color{
+    color: #F3976C;
+}
+.col-sm-12{
+    text-align: center;
+}
+.navbar-brand img{
+    width: 250px;
+}
+footer p{
+    font-size: 14px;
+}
+article p{
+    font-size: 12px;
 }
 
 a,
@@ -91,7 +114,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -133,7 +156,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(0, 0, 0);
 }
 
 .d-bloc .a-btn:hover,
@@ -302,13 +325,12 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
 }
 
 .navbar-brand img[src$=svg] {
-    min-width: 100px;
+    min-width: 300px;
 }
 
 .nav-center .navbar-brand img {
@@ -651,7 +673,6 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
 }
 
 .container {
@@ -678,6 +699,7 @@ a {
 
 p {
     font-size: 11px;
+    color: #000000;
 }
 
 .tight-width-whitespace {
@@ -700,13 +722,13 @@ p {
 }
 
 .social {
-    max-width: 400px;
     margin: auto auto auto auto;
 }
 
 h2 {
     font-size: 22px;
     line-height: 1.4em;
+    color: #000000;
 }
 
 h3 {
@@ -723,11 +745,11 @@ h3 {
 }
 
 h1 {
-    color: #333333!important;
+    color: #F3976C!important;
 }
 
 h4 {
-    color: #333333!important;
+    color: #F3976C!important;
 }
 
 .icons {
@@ -746,6 +768,12 @@ h4 {
 .portfolio-row {
     margin-bottom: 44px;
     margin-top: 50px;
+}
+.portfolio-row img{
+    max-width: 270px;
+    max-height: 270px;
+    min-height: 100px;
+    min-width: 100px;
 }
 
 .avatar {
@@ -773,11 +801,6 @@ h4 {
 .bgc-atomic-tangerine {
     background-color: #F3976C;
 }
-
-.tc-white {
-    color: #F3976C!important;
-}
-
 .btn-atomic-tangerine {
     background: #F3976C;
     color: #FFFFFF!important;
@@ -810,19 +833,19 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg.webp");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/lines-h2-bg.webp");
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/agence-la-panthere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
@@ -1036,7 +1059,7 @@ h4 {
 }
 
 @media (max-width: 767px) {
-    .bloc-mob-center-text {
+    .bloc-mob-center-text .portfolio-row{
         text-align: center;
     }
 }
