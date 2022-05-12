@@ -12,32 +12,19 @@
 	<script src="./js/jquery-2.1.0.js"></script>
 	<script src="./js/bootstrap.js"></script>
 	<script src="./js/blocs.js"></script>
+	<script src="./js/jqBootstrapValidation.js"></script>
+	<script src="./js/formHandler.js"></script>
     <title>La Panthère Agence - Entreprise Web Design à Lyon</title>
 </head>
 <body>
-<!-- Principal conteneur -->
-<div class="page-container">
-    
-	<!-- bloc-0 -->
-	<div class="bloc bgc-white l-bloc " id="bloc-0">
-		<div class="container bloc-sm">
-	
-			<nav class="navbar row">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.webp" alt="paris web design logo agence web meilleure agence"/></a>
-				</div>
-				<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-					<ul class="site-navigation nav navbar-nav">
-						<li><a href="index.html">Accueil</a></li>
-						<li><a href="page2.html">Contact</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-	</div>
-	<!-- bloc-0 END -->
-	
-	<!-- bloc-1-presentation -->
+	<div class="page-container">
+		<nav>
+			<a href="index.html"><img src="img/agence-la-panthere-monochrome.webp" alt="paris web design logo agence web meilleure agence"/></a>
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
 	<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero">
 		<div class="container bloc-lg">
 			<div class="row tight-width-whitespace">
@@ -47,20 +34,17 @@
 						Agence La Panthère
 					</h1>
 					<div class="text-center">
-						<a href="page2.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
+						<a href="contact.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- bloc-1-presentation END -->
-	
-	<!-- bloc-2-services -->
 		<section>
 			<div class="bloc bgc-white l-bloc" id="bloc-2-services">
 				<div class="container bloc-md">
 					<div class="row">
-						<div class="col-sm-12 text-center margin">
+						<div class="col-sm-12 text-center flex">
 							<p class="texte">L'agence La Panthère est une agence de web design qui aide les entreprises à devenir plus attractives et visibles sur Internet.</p>
 						</div>
 					</div>
@@ -92,7 +76,7 @@
 						</div>
 					</div>
 					<div class="row voffset-lg voffset">
-						<div class="col-xs-12 col-md-8 col-md-offset-2 text-center margin">
+						<div class="col-xs-12 col-md-8 col-md-offset-2 text-center flex">
 							<p class="texte">"L'Agence La Panthère est une excellente agence web! Les web designers ont réussi à capturer l'essence de notre entreprise 
 								et à l'intégrer à notre site. Cela nous a aidé à doubler nos ventes en ligne à Lyon."<br>Maxime Guibard, PDG de A vos fourchettes</p>
 						</div>
@@ -115,7 +99,7 @@
 								Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à nous contacter. 
 								Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche.
 							</p>
-							<a class="ltc-white bold-link" href="page2.html">Contactez notre équipe</a>
+							<a class="ltc-white bold-link texte" href="contact.html">Contactez notre équipe</a>
 						</div>
 					</div>
 				</div>
@@ -125,7 +109,7 @@
 			<div class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio">
 				<div class="container bloc-lg">
 					<div class="row">
-						<div class="col-sm-12 text-center margin">
+						<div class="col-sm-12 text-center flex">
 							<p class="texte">Nous travaillons avec beaucoup de clients,<br>voici nos réalisations.</p>
 						</div>
 					</div>
@@ -175,12 +159,11 @@
 				<div class="row">
 					<h4 class="mg-md text-center tc-white">Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !</h4>
 					<div class="col-sm-12 text-center">
-						<a href="page2.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
+						<a href="contact.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<nav>
 			<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 				<div class="container bloc-sm">
 					<div class="row">
@@ -189,29 +172,28 @@
 							<div class="row row-no-gutters social">
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="index.html"><i class="fa fa-twitter icon-md">Twitter</i></a>
+										<a class="social" href="index.html"><i class="fa fa-twitter icon-md"><p>Twitter</p></i></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="index.html"><i class="fa fa-facebook icon-md">Facebook</i></a>
+										<a class="social" href="index.html"><i class="fa fa-facebook icon-md"><p>Facebook</p></i></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="index.html"><i class="fa fa-dribbble icon-md">Dribble</i></a>
+										<a class="social" href="index.html"><i class="fa fa-dribbble icon-md"><p>Dribble</p></i></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="index.html"><i class="fa fa-instagram icon-md">Instagram</i></a>
+										<a class="social" href="index.html"><i class="fa fa-instagram icon-md"><p>Instagram</p></i></a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-		</nav>
 	</footer>
 </body>
 </html>
