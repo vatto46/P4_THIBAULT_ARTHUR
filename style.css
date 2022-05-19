@@ -26,6 +26,9 @@ body {
 .size{
     font-size: 14px;
 }
+.width{
+    max-width: 300px;
+}
 nav{
     padding: 20px;
     display: flex;
@@ -61,8 +64,11 @@ li a{
     padding-right: 50px;
     color: #5e636e;
 }
-img{
-    
+@media (max-width:572px) {
+    nav{
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 
@@ -757,6 +763,7 @@ h4 {
 .portfolio-row {
     margin-bottom: 44px;
     margin-top: 50px;
+    text-align: -moz-center;
 }
 .portfolio-row img{
     max-width: 270px;
